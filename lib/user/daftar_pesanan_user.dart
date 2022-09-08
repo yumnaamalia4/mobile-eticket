@@ -47,7 +47,7 @@ class _DaftarPesananUserState extends State<DaftarPesananUser> {
         backgroundColor: background2,
         automaticallyImplyLeading: false,
         title: Text(
-          'Purchase History',
+          'Riwayat Pembelian',
           style: GoogleFonts.montserrat(
             color: Colors.white,
             fontSize: 22,
@@ -76,10 +76,10 @@ class _DaftarPesananUserState extends State<DaftarPesananUser> {
                   indicatorColor: primaryColor,
                   tabs: [
                     Tab(
-                      text: 'Ticket',
+                      text: 'Tiket',
                     ),
                     Tab(
-                      text: 'Transaction List',
+                      text: 'Daftar Transaksi',
                     ),
                   ],
                 ),
@@ -179,7 +179,7 @@ class _DaftarPesananUserState extends State<DaftarPesananUser> {
                                                                     
                                                         child: snapshot.data[index]
                                                                   ['status'] == 1 ?
-                                                        Text('Paid',
+                                                        Text('Sudah Bayar',
                                                           style: GoogleFonts
                                                               .montserrat(
                                                             color:
@@ -189,7 +189,7 @@ class _DaftarPesananUserState extends State<DaftarPesananUser> {
                                                                 FontWeight.w500,
                                                           ),
                                                         )
-                                                        :Text('Not yet paid',
+                                                        :Text('Belum Bayar',
                                                           style: GoogleFonts
                                                               .montserrat(
                                                             color:

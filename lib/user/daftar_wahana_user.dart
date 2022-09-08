@@ -75,7 +75,7 @@ class _DaftarWahanaUserState extends State<DaftarWahanaUser> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('Cart',
+                    Text('Keranjang',
                         style: title2.copyWith(
                           color: textColor1,
                         )),
@@ -107,7 +107,7 @@ class _DaftarWahanaUserState extends State<DaftarWahanaUser> {
           },
         ),
         title: Text(
-          'Rides',
+          'Wahana',
           style: GoogleFonts.montserrat(
             color: Colors.white,
             fontSize: 22,
@@ -136,10 +136,10 @@ class _DaftarWahanaUserState extends State<DaftarWahanaUser> {
                   indicatorColor: primaryColor,
                   tabs: [
                     Tab(
-                      text: 'Entrance ticket',
+                      text: 'Tiket Masuk',
                     ),
                     Tab(
-                      text: 'Ride Tickets',
+                      text: 'Tiket Wahana',
                     ),
                   ],
                 ),
@@ -310,7 +310,7 @@ class _TiketMasukState extends State<TiketMasuk> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   5, 0, 0, 5),
                               child: Text(
-                                'Description of Rides Ticket Place',
+                                'Tiket masuk wisata untuk perorang',
                                 // "Get all the features at a discount for yearly membership.",
                                 style: TextStyle(
                                   fontSize: 18,
@@ -335,7 +335,7 @@ class _TiketMasukState extends State<TiketMasuk> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   5, 0, 0, 5),
                               child: Text(
-                                'per person',
+                                'per orang',
                                 // widget.snapshot.data[widget.index]
                                 //         ['deskripsi_harga'] ??
                                 //     '-',
@@ -491,17 +491,6 @@ class _dataWidgetState extends State<dataWidget> {
           children: [
             Row(
               children: [
-                // ClipRRect(
-                //           borderRadius: BorderRadius.only(
-                //             bottomLeft: Radius.circular(8),
-                //             bottomRight: Radius.circular(0),
-                //             topLeft: Radius.circular(8),
-                //             topRight: Radius.circular(0),
-                //           ),
-                //           child: Image.asset(
-                //             'assets/image/wahana_kapal.jpg'
-                //               ),
-                //         ),
                 ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Image.network(

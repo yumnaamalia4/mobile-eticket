@@ -21,7 +21,7 @@ class _AkunUserState extends State<AkunUser> {
         backgroundColor: Color(0xFFFCC050),
         automaticallyImplyLeading: false,
         title: Text(
-          'Account',
+          'Akun',
           style: GoogleFonts.montserrat(
             color: Colors.white,
             fontSize: 22,

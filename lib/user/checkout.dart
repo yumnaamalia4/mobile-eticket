@@ -56,7 +56,7 @@ class _CheckOutState extends State<CheckOut> {
                     Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
                       child: Text(
-                        'Back',
+                        'Kembali',
                         style: GoogleFonts.montserrat(
                           fontWeight: FontWeight.normal,
                         ),
@@ -69,7 +69,7 @@ class _CheckOutState extends State<CheckOut> {
                 child: Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(24, 0, 0, 0),
                   child: Text(
-                    'Cart',
+                    'Keranjang',
                     style: GoogleFonts.montserrat(
                       fontSize: 20,
                       fontWeight: FontWeight.normal,
@@ -164,15 +164,15 @@ class _CheckOutState extends State<CheckOut> {
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            // ClipRRect(
-                            //   borderRadius: BorderRadius.circular(12),
-                            //   child: Image.network(
-                            //     baseUrl + 'images/' + cart.image,
-                            //     width: 80,
-                            //     height: double.infinity,
-                            //     fit: BoxFit.fitWidth,
-                            //   ),
-                            // ),
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(12),
+                              child: Image.network(
+                                baseUrl + 'images/' + cart.image,
+                                width: 80,
+                                height: double.infinity,
+                                fit: BoxFit.fitWidth,
+                              ),
+                            ),
                             Padding(
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
@@ -222,7 +222,7 @@ class _CheckOutState extends State<CheckOut> {
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0, 5, 0, 0),
                                             child: Text(
-                                              'Quanity: ' + cart.qty.toString(),
+                                              'Jumlah: ' + cart.qty.toString(),
                                               style: GoogleFonts.montserrat(
                                                 color: Color(0xFF57636C),
                                                 fontSize: 14,
@@ -317,7 +317,7 @@ class _CheckOutState extends State<CheckOut> {
                                 : Text(
                                     // valueOrDefault<String>(
                                     //   dateTimeFormat('d/M/y', datePicked),
-                                    'Tickets for what date?',
+                                    'Tiket untuk tanggal berapa?',
                                     // ),
                                     style: GoogleFonts.montserrat(
                                       color: Color(0xFF57636C),

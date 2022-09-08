@@ -40,7 +40,7 @@ class _WisataUserState extends State<WisataUser> {
           },
         ),
         title: Text(
-          'Tourist Village',
+          'Tempat Wisata',
         ),
         actions: [],
         centerTitle: false,
@@ -156,17 +156,6 @@ class _dataWidgetState extends State<dataWidget> {
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        // ClipRRect(
-                        //   borderRadius: BorderRadius.only(
-                        //     bottomLeft: Radius.circular(8),
-                        //     bottomRight: Radius.circular(0),
-                        //     topLeft: Radius.circular(8),
-                        //     topRight: Radius.circular(0),
-                        //   ),
-                        //   child: Image.asset(
-                        //     'assets/image/watu_gambir.png'
-                        //       ),
-                        // ),
                         ClipRRect(
                           borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(8),

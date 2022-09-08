@@ -41,14 +41,14 @@ class _MainPageUserState extends State<MainPageUser> {
               Icons.list_alt,
               size: 40,
             ),
-            label: 'Order List',
+            label: 'Daftar Pesanan',
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.person_rounded,
               size: 40,
             ),
-            label: 'Account',
+            label: 'Akun',
           )
         ],
         selectedItemColor: primaryColor,

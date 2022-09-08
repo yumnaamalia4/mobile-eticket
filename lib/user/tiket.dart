@@ -56,7 +56,7 @@ class _TiketState extends State<Tiket> {
           },
         ),
         title: Text(
-          'Ticket',
+          'Tiket',
           style: title3.copyWith(
             color: Colors.white,
           ),
@@ -160,7 +160,7 @@ list(List data) {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            'Purchase date',
+            'Tanggal Pembelian',
             style: GoogleFonts.getFont(
               'Montserrat',
               fontSize: 14,
@@ -181,7 +181,7 @@ list(List data) {
                     children: [
                       data.indexOf(item) == 0
                           ? Text(
-                              'Purchase Details',
+                              'Detail Pembelian',
                               style: GoogleFonts.getFont(
                                 'Montserrat',
                                 fontSize: 14,
@@ -324,7 +324,6 @@ class tiketWidget extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('transaction code ${widget.kode}'),
                 itemOnly(data),
                 Text(
                   'Rp. ${getTotal(data)}',
@@ -343,7 +342,7 @@ class tiketWidget extends StatelessWidget {
                         ),
                       );
                     },
-                    child: Text('Pay Ticket'),
+                    child: Text('Bayar Tiket'),
                     style: ButtonStyle(
                         backgroundColor:
                             MaterialStateProperty.all<Color>(Color(0xFFFCC050)),
